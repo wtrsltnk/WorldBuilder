@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- WorldBuilder Data Storage File -->
+	<Group>
+		<GroupName>
+			"Group etc."
+		</GroupName>
+		<GroupDescription>
+			"No Desciprtion"
+		</GroupDescription>
+		<GroupGameName>
+			"No Game"
+		</GroupGameName>
+		<GroupGameDir>
+			"No Game Dir"
+		</GroupGameDir>
+		<GroupGameRun>
+			"true"
+		</GroupGameRun>
+			<Command>
+				<CommandName>
+					"Name etc."
+				</CommandName>
+				<CommandDescription>
+					"No Description"
+				</CommandDescription>
+				<CommandCall>
+					"No Call"
+				</CommandCall>
+				<CommandValue>
+					"No Value"
+				</CommandValue>
+				<CommandType>
+					"0"
+				</CommandType>
+			</Command>
+		<Tool>
+			<ToolName>
+				"Tool etc."
+			</ToolName>
+			<ToolDescription>
+				"No Description"
+			</ToolDescription>
+			<ToolRun>
+				"true"
+			</ToolRun>
+			<Command>
+				<CommandName>
+					"Name etc."
+				</CommandName>
+				<CommandDescription>
+					"ut then the entity cannot have the EmbeddedFix set."
+				</CommandDescription>
+				<CommandCall>
+					"No Call"
+				</CommandCall>
+				<CommandValue>
+					"No Value"
+				</CommandValue>
+				<CommandType>
+					"2"
+				</CommandType>
+			</Command>
+		</Tool>
+		<Tool>
+			<ToolName>
+				"Tool 2."
+			</ToolName>
+			<ToolDescription>
+				"No Description"
+			</ToolDescription>
+			<ToolRun>
+				"false"
+			</ToolRun>
+			<Command>
+				<CommandName>
+					"Name 2."
+				</CommandName>
+				<CommandDescription>
+					"No Description"
+				</CommandDescription>
+				<CommandCall>
+					"No Call"
+				</CommandCall>
+				<CommandValue>
+					"No Value"
+				</CommandValue>
+				<CommandType>
+					"1"
+				</CommandType>
+			</Command>
+		</Tool>
+	</Group>

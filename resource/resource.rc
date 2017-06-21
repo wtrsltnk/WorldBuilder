@@ -1,0 +1,402 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_WRENCH              ICON    DISCARDABLE     "WRENCH.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP  DISCARDABLE     "toolbar.bmp"
+IDB_NODES               BITMAP  DISCARDABLE     "tv_nodes.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Load",                       IDM_FILE_LOAD
+        MENUITEM "&Save",                       IDM_FILE_SAVE
+        MENUITEM "&Close",                      IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+        POPUP "&Import"
+        BEGIN
+            MENUITEM "Default &HL tools",           IDM_FILE_IMPORT_DEFHL
+            MENUITEM SEPARATOR
+            MENUITEM "&Group...",                   IDM_FILE_IMPORT_GROUP
+            MENUITEM "&Tool...",                    IDM_FILE_IMPORT_TOOL
+            MENUITEM "&Command....",                IDM_FILE_IMPORT_COMMAND
+        END
+        POPUP "&Export"
+        BEGIN
+            MENUITEM "&Group...",                   IDM_FILE_EXPORT_GROUP
+            MENUITEM "&Tool...",                    IDM_FILE_EXPORT_TOOL
+            MENUITEM "&Command...",                 IDM_FILE_EXPORT_COMMAND
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&New...",                     IDM_EDIT_NEW
+        MENUITEM "&Edit",                       IDM_EDIT_EDIT
+        MENUITEM "&Delete",                     IDM_EDIT_DEL
+    END
+    POPUP "&Build"
+    BEGIN
+        MENUITEM "&Map",                        IDM_BUILD_MAP
+        MENUITEM "&Batch File",                 IDM_BUILD_BATCH
+        MENUITEM SEPARATOR
+        MENUITEM "Start &Game",                 IDM_BUILD_STARTGAME
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "Index...",                    IDM_HELP_INDEX
+        MENUITEM SEPARATOR
+        MENUITEM "About Worldbuilder",          IDM_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COMMAND DIALOGEX 0, 0, 247, 204
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Command Options"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Save",IDOK,190,7,50,14,BS_FLAT
+    PUSHBUTTON      "Close",IDCANCEL,190,24,50,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_NAME,75,20,100,12,NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_DESCRIPTION,75,80,100,30,ES_MULTILINE | NOT 
+                    WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VALUE,75,60,100,12,NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Value Type:",IDC_STATIC_TYPE,75,115,100,75,BS_FLAT
+    CONTROL         "Text",IDC_RADIO_TEXT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,100,130,45,15
+    CONTROL         "Number",IDC_RADIO_INT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,100,149,50,15
+    CONTROL         "True/False",IDC_RADIO_BOOL,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,100,170,50,15
+    EDITTEXT        IDC_EDIT_CALL,75,40,100,12,NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    RTEXT           "Name:",IDC_STATIC_NAME,20,20,50,15,SS_CENTERIMAGE
+    RTEXT           "Description:",IDC_STATIC_DESCRIPTION,20,80,50,15,
+                    SS_CENTERIMAGE
+    RTEXT           "Value:",IDC_STATIC_VALUE,20,60,50,15,SS_CENTERIMAGE
+    RTEXT           "Call:",IDC_STATIC_CALL,20,40,50,15,SS_CENTERIMAGE
+END
+
+IDD_TOOL DIALOGEX 0, 0, 247, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Tool Options"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Save",IDOK,190,7,50,14,BS_FLAT
+    PUSHBUTTON      "Close",IDCANCEL,190,24,50,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_NAME,75,20,100,12,NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_DESCRIPTION,75,56,100,30,ES_MULTILINE | NOT 
+                    WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    RTEXT           "Name:",IDC_STATIC_NAME,20,20,50,15,SS_CENTERIMAGE
+    RTEXT           "Description:",IDC_STATIC_DESCRIPTION,20,56,50,15,
+                    SS_CENTERIMAGE
+    CONTROL         "Run this Tool",IDC_CHECK_RUN,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,75,91,100,10
+    EDITTEXT        IDC_EDIT_CALL,74,38,100,12,NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    RTEXT           "Call:",IDC_STATIC_CALL,19,38,50,15,SS_CENTERIMAGE
+END
+
+IDD_GROUP DIALOGEX 0, 0, 347, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Group Options"
+FONT 8, "Verdana"
+BEGIN
+    PUSHBUTTON      "Save",IDOK,290,7,50,14,BS_FLAT
+    PUSHBUTTON      "Close",IDCANCEL,290,24,50,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_NAME,75,20,180,12,NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_DESCRIPTION,75,40,180,30,ES_MULTILINE | NOT 
+                    WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    RTEXT           "Name:",IDC_STATIC_NAME,20,19,50,15,SS_CENTERIMAGE
+    RTEXT           "Description:",IDC_STATIC_DESCRIPTION,20,39,50,15,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MAP,75,75,180,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "Map:",IDC_STATIC_MAP,20,74,50,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_BASEDIR,75,95,180,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "Tool Directory:",IDC_STATIC_BASEDIR,10,94,60,15,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "...",IDC_BUTTON_BASEDIR,260,95,25,15,BS_FLAT
+    EDITTEXT        IDC_EDIT_GAMENAME,75,115,180,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "Game Name:",IDC_STATIC_GAMENAME,15,114,55,15,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_GAMEDIR,75,135,180,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "Game Executable",IDC_STATIC_GAMEDIR,10,134,60,15,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "..",IDC_BUTTON_GAMEDIR,260,135,25,15,BS_FLAT
+    PUSHBUTTON      "...",IDC_BUTTON_MAP,260,75,25,15,BS_FLAT
+    CONTROL         "Run the game after compile",IDC_CHECK_RUNGAME,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,75,175,140,10
+    EDITTEXT        IDC_EDIT_WADDRIVE,75,155,180,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "Wad Drive:",IDC_STATIC_WADDRIVE,10,154,60,15,
+                    SS_CENTERIMAGE
+END
+
+IDD_NEW DIALOGEX 0, 0, 144, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New..."
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,31,48,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,87,48,50,14,BS_FLAT
+    LISTBOX         IDC_LIST_TYPE,7,7,130,35,LBS_NOINTEGRALHEIGHT | NOT 
+                    WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+END
+
+IDD_NEWNAME DIALOG DISCARDABLE  0, 0, 170, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,60,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,42,50,14
+    EDITTEXT        IDC_EDIT_NAME,7,18,156,12,ES_AUTOHSCROLL
+    LTEXT           "New name for this item:",IDC_STATIC_NAME,7,7,156,10
+END
+
+IDD_DIRECTORY DIALOG DISCARDABLE  0, 0, 251, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,194,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,194,24,50,14
+    LISTBOX         IDC_LIST_DIR,7,88,124,75,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",IDS_PATHTOFILL,7,62,123,12
+    COMBOBOX        IDC_COMBO_DRIVE,7,7,130,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  100, 100, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Close",IDCLOSE,129,74,50,14,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_COMMAND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_TOOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_GROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_NEWNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DIRECTORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SELECTITEM          "Select a Item from the list <-------"
+    IDS_BUILD_MAP           "Build Map!"
+    IDS_BUILD_BATCH         "Make Batch"
+    IDS_BUILD_STARTHL       "Start Game"
+    IDS_HEADER_NAME         "Name"
+    IDS_HEADER_DESCRIPTION  "Description"
+    IDS_HEADER_ITEM         "Item"
+    IDS_HEADER_VALUE        "Value"
+    IDS_ITEM_NAME           "Name:"
+    IDS_ITEM_CALL           "Call:"
+    IDS_ITEM_DESCRIPTION    "Description:"
+    IDS_ITEM_VALUE          "Value:"
+    IDS_ITEM_TYPE           "Value Type:"
+    IDS_INFO_TOOLCOUNT      "Number of Tools:\t"
+    IDS_INFO_COMMANDCOUNT   "Number of Commands:\t"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INFO_GAMECMDCOUNT   "Number of Game Commands:"
+    IDS_INFO_NAME           "Name:\t\t\t"
+    IDS_INFO_DESCRIPTION    "Description:\t\t"
+    IDS_INFO_CMDCOUNT       "Number of Commands:\t"
+    IDS_INFO_RUN            "This Tool is Active."
+    IDS_INFO_CALL           "Call:\t\t\t"
+    IDS_INFO_VALUE          "Value:\t\t\t"
+    IDS_EDIT_NEW            "New..."
+    IDS_EDIT_EDIT           "Edit"
+    IDS_EDIT_DEL            "Delete"
+    IDS_DLG_NONAME          "You have to enter a name!!!"
+    IDS_DLG_NOSELECT        "You haven't selected a new type. Please select one to proceed."
+    ID_NONEWDLG             "Can't add a new item. You haven't selected the right item to add a new one."
+    IDS_INFO_GAME           "Game Name:\t\t"
+    IDS_INFO_GAME_DIR       "Game Directory:\t\t"
+    IDS_INFO_MAP            "Map name:\t\t"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONFIRM             "Are you sure?"
+    IDS_NOGROUPSAVE         "No group selected!\nNothing saved."
+    IDS_NOTOOLSAVE          "No tool selected!\nNothing saved."
+    IDS_NOCOMMANDSAVE       "No command selected!\nNothing saved."
+    IDS_NOTOOLLOAD          "No group selected!\nNothing loaded"
+    IDS_NOCOMMANDLOAD       "No tool selected!\nNothing loaded"
+    IDS_NOGROUPSEL          "No group selected!\nCan't build a batch file."
+    IDS_BATCHCREATED        "Batch file created."
+    IDS_INFO_TYPE           "Value type:\t\t"
+    IDS_QUIT                "Do you really want to close the application?"
+    IDS_QUIT_SAVE           "Do you want to save the changes?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

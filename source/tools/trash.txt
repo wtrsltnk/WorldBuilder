@@ -1,0 +1,226 @@
+
+
+bool CGroupManager::load( string filename ) throw()
+{
+	CXMLParser xml;
+	CGroup *group;
+	CTool *tool;
+	CCommand *command;
+	
+	this->filename = filename;
+	group = new CGroup();
+	tool = new CTool();
+	command = new CCommand();
+
+	try
+	{
+		xml.SetXmlFile( const_cast <char *> (filename.c_str()) );
+	}
+	catch ( char * error )
+	{
+		throw( error );
+		return false;
+	}
+
+	xml.GetNextElement();
+	xml.GetNextElement();
+	xml.GetNextElement();
+
+	if ( strcmp( xml.GetElementName(), "<WorldBuilder>" ) != 0 )
+	{
+		throw( "Wrong File" );
+		return false;
+	}
+
+	xml.GetNextElement();
+	while ( stricmp( xml.GetElementName(), "</WorldBuilder>" ) != 0 )
+	{
+		switch ( xml.GetElementLevel() )
+		{
+		case 1:
+			if ( strcmp( xml.GetElementName(), "</Group>" ) == 0 )
+			{
+				this->addGroup( group );
+			}
+			break;
+		case 2:
+			if ( strcmp( xml.GetElementName(), "<Group>" ) == 0 )
+			{
+				group = new CGroup();
+			}
+			else if ( strcmp( xml.GetElementName(), "</Tool>" ) == 0 )
+			{
+				group->addTool( tool );
+			}
+			else if ( strcmp( xml.GetElementName(), "</Command>" ) == 0 )
+			{
+				group->addGameCommand( command );
+			}
+			break;
+		case 3:
+			if ( strcmp( xml.GetElementName(), "<Tool>" ) == 0 )
+			{
+				tool = new CTool();
+			}
+			else if ( strcmp( xml.GetElementName(), "<Command>" ) == 0 )
+			{
+				command = new CCommand();
+			}
+			else if ( strcmp( xml.GetElementName(), "</Command>" ) == 0 )
+			{
+				tool->addCommand( command );
+			}
+			else if ( strcmp( xml.GetElementName(), "<GroupName>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					group->setName( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<GroupDescription>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					group->setDescription( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<GroupGameName>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					group->setGameName( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<GroupGameDir>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					group->setGameDir( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<GroupGameRun>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					if ( strcmp( xml.GetData(), "true" ) )
+					{
+						group->setGameRun( true );
+					}
+					else
+					{
+						group->setGameRun( false );
+					}
+				}
+			}
+			break;
+		case 4:
+			if ( strcmp( xml.GetElementName(), "<Command>" ) == 0 )
+			{
+				command = new CCommand();
+			}
+			else if ( strcmp( xml.GetElementName(), "<ToolName>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					tool->setName( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<ToolDescription>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					tool->setDescription( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<ToolRun>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					if ( strcmp( xml.GetData(), "true" ) )
+					{
+						tool->setRun( true );
+					}
+					else
+					{
+						tool->setRun( false );
+					}
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<CommandName>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					command->setName( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<CommandDescription>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					command->setDescription( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<CommandCall>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					command->setCall( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<CommandValue>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					command->setValue( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<CommandType>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					command->setType( atoi( const_cast <char*> (trim( xml.GetData() ).c_str()) ) );
+				}
+			}
+			break;
+		case 5:
+			if ( strcmp( xml.GetElementName(), "<CommandName>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					command->setName( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<CommandDescription>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					command->setDescription( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<CommandCall>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					command->setCall( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<CommandValue>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					command->setValue( trim( xml.GetData() ) );
+				}
+			}
+			else if ( strcmp( xml.GetElementName(), "<CommandType>" ) == 0 )
+			{
+				if ( xml.HasData() )
+				{
+					command->setType( atoi( const_cast <char*> (trim( xml.GetData() ).c_str()) ) );
+				}
+			}
+			break;
+		}
+	xml.GetNextElement();
+	}
+	return true;
+}

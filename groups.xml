@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- WorldBuilder Data Storage File -->
+<WorldBuilder>
+	<Group>
+		<GroupName>
+			"Ok"
+		</GroupName>
+		<GroupBaseDir>
+			"c:\tool"
+		</GroupBaseDir>
+		<GroupMapName>
+			"G:\de_cbv"
+		</GroupMapName>
+		<GroupDescription>
+			"No Desciprtion"
+		</GroupDescription>
+		<GroupGameName>
+			"nix"
+		</GroupGameName>
+		<GroupGameDir>
+			"G:\programma's\vbkeybinder\Keybinder\KeyBinder.exe"
+		</GroupGameDir>
+		<GroupWadDrive>
+			"g:"
+		</GroupWadDrive>
+		<GroupGameRun>
+			"true"
+		</GroupGameRun>
+		<Command>
+			<CommandName>
+			"cmdtjewaar"
+			</CommandName>
+			<CommandDescription>
+			"No Description"
+			</CommandDescription>
+			<CommandCall>
+			"No Call"
+			</CommandCall>
+			<CommandValue>
+			"No Value"
+			</CommandValue>
+			<CommandType>
+			"0"
+			</CommandType>
+		</Command>
+		<Command>
+			<CommandName>
+			"sdfgssdf"
+			</CommandName>
+			<CommandDescription>
+			"gsdf"
+			</CommandDescription>
+			<CommandCall>
+			"sdfg"
+			</CommandCall>
+			<CommandValue>
+			"dfg"
+			</CommandValue>
+			<CommandType>
+			"0"
+			</CommandType>
+		</Command>
+		<Tool>
+			<ToolName>
+				"Tooltje"
+			</ToolName>
+			<ToolCall>
+				"tll.exe"
+			</ToolCall>
+			<ToolDescription>
+				"No Description"
+			</ToolDescription>
+			<ToolRun>
+				"false"
+			</ToolRun>
+			<Command>
+				<CommandName>
+				"cmdtje"
+				</CommandName>
+				<CommandDescription>
+				"Description"
+				</CommandDescription>
+				<CommandCall>
+				"Call"
+				</CommandCall>
+				<CommandValue>
+				"Value"
+				</CommandValue>
+				<CommandType>
+				"2"
+				</CommandType>
+			</Command>
+		</Tool>
+		<Tool>
+			<ToolName>
+				"Tool 2."
+			</ToolName>
+			<ToolCall>
+				"tll.exe"
+			</ToolCall>
+			<ToolDescription>
+				"No Description"
+			</ToolDescription>
+			<ToolRun>
+				"true"
+			</ToolRun>
+			<Command>
+				<CommandName>
+				"Name 2."
+				</CommandName>
+				<CommandDescription>
+				"No Description"
+				</CommandDescription>
+				<CommandCall>
+				"No Call"
+				</CommandCall>
+				<CommandValue>
+				"No Value"
+				</CommandValue>
+				<CommandType>
+				"0"
+				</CommandType>
+			</Command>
+		</Tool>
+		<Tool>
+			<ToolName>
+				"Toolnaam"
+			</ToolName>
+			<ToolCall>
+				"-wous"
+			</ToolCall>
+			<ToolDescription>
+				"omschrijving"
+			</ToolDescription>
+			<ToolRun>
+				"true"
+			</ToolRun>
+		</Tool>
+		<Tool>
+			<ToolName>
+				"dsfg"
+			</ToolName>
+			<ToolCall>
+				"g"
+			</ToolCall>
+			<ToolDescription>
+				"fg"
+			</ToolDescription>
+			<ToolRun>
+				"true"
+			</ToolRun>
+		</Tool>
+	</Group>
+	<Group>
+		<GroupName>
+			"bla"
+		</GroupName>
+		<GroupBaseDir>
+			"No Default Directory"
+		</GroupBaseDir>
+		<GroupMapName>
+			"alijfglkjzsdfgb"
+		</GroupMapName>
+		<GroupDescription>
+			"No Desciprtion"
+		</GroupDescription>
+		<GroupGameName>
+			"No"
+		</GroupGameName>
+		<GroupGameDir>
+			"No"
+		</GroupGameDir>
+		<GroupWadDrive>
+			"c:"
+		</GroupWadDrive>
+		<GroupGameRun>
+			"true"
+		</GroupGameRun>
+		<Command>
+			<CommandName>
+			"Name etc."
+			</CommandName>
+			<CommandDescription>
+			"No Description"
+			</CommandDescription>
+			<CommandCall>
+			"No Call"
+			</CommandCall>
+			<CommandValue>
+			"No Value"
+			</CommandValue>
+			<CommandType>
+			"0"
+			</CommandType>
+		</Command>
+		<Tool>
+			<ToolName>
+				"Tool etc."
+			</ToolName>
+			<ToolCall>
+				"tll.exe"
+			</ToolCall>
+			<ToolDescription>
+				"No Description"
+			</ToolDescription>
+			<ToolRun>
+				"true"
+			</ToolRun>
+			<Command>
+				<CommandName>
+				"Name etc."
+				</CommandName>
+				<CommandDescription>
+				"No Description"
+				</CommandDescription>
+				<CommandCall>
+				"No Call"
+				</CommandCall>
+				<CommandValue>
+				"No Value"
+				</CommandValue>
+				<CommandType>
+				"2"
+				</CommandType>
+			</Command>
+			<Command>
+				<CommandName>
+				"xvbncvb"
+				</CommandName>
+				<CommandDescription>
+				"No Description"
+				</CommandDescription>
+				<CommandCall>
+				"No Call"
+				</CommandCall>
+				<CommandValue>
+				"No Value"
+				</CommandValue>
+				<CommandType>
+				"0"
+				</CommandType>
+			</Command>
+			<Command>
+				<CommandName>
+				"vbnc"
+				</CommandName>
+				<CommandDescription>
+				"No Description"
+				</CommandDescription>
+				<CommandCall>
+				"No Call"
+				</CommandCall>
+				<CommandValue>
+				"No Value"
+				</CommandValue>
+				<CommandType>
+				"0"
+				</CommandType>
+			</Command>
+			<Command>
+				<CommandName>
+				"xvbxcvb"
+				</CommandName>
+				<CommandDescription>
+				"No Description"
+				</CommandDescription>
+				<CommandCall>
+				"No Call"
+				</CommandCall>
+				<CommandValue>
+				"No Value"
+				</CommandValue>
+				<CommandType>
+				"0"
+				</CommandType>
+			</Command>
+			<Command>
+				<CommandName>
+				"kwaak"
+				</CommandName>
+				<CommandDescription>
+				"Description"
+				</CommandDescription>
+				<CommandCall>
+				"Call"
+				</CommandCall>
+				<CommandValue>
+				"Value"
+				</CommandValue>
+				<CommandType>
+				"2"
+				</CommandType>
+			</Command>
+		</Tool>
+		<Tool>
+			<ToolName>
+				"Tool 2."
+			</ToolName>
+			<ToolCall>
+				"tll.exe"
+			</ToolCall>
+			<ToolDescription>
+				"No Description"
+			</ToolDescription>
+			<ToolRun>
+				"true"
+			</ToolRun>
+			<Command>
+				<CommandName>
+				"Name 2."
+				</CommandName>
+				<CommandDescription>
+				"No Description"
+				</CommandDescription>
+				<CommandCall>
+				"No Call"
+				</CommandCall>
+				<CommandValue>
+				"No Value"
+				</CommandValue>
+				<CommandType>
+				"2"
+				</CommandType>
+			</Command>
+		</Tool>
+	</Group>
+	<Group>
+		<GroupName>
+			"Group etc."
+		</GroupName>
+		<GroupBaseDir>
+			"No Default Directory"
+		</GroupBaseDir>
+		<GroupMapName>
+			"No Map NameNo Map Name"
+		</GroupMapName>
+		<GroupDescription>
+			"No Desciprtion"
+		</GroupDescription>
+		<GroupGameName>
+			"No Game"
+		</GroupGameName>
+		<GroupGameDir>
+			"No Game Dir"
+		</GroupGameDir>
+		<GroupWadDrive>
+			"c:"
+		</GroupWadDrive>
+		<GroupGameRun>
+			"true"
+		</GroupGameRun>
+		<Command>
+			<CommandName>
+			"Name etc."
+			</CommandName>
+			<CommandDescription>
+			"No Description"
+			</CommandDescription>
+			<CommandCall>
+			"No Call"
+			</CommandCall>
+			<CommandValue>
+			"No Value"
+			</CommandValue>
+			<CommandType>
+			"0"
+			</CommandType>
+		</Command>
+		<Tool>
+			<ToolName>
+				"Tool etc."
+			</ToolName>
+			<ToolCall>
+				"tll.exe"
+			</ToolCall>
+			<ToolDescription>
+				"No Description"
+			</ToolDescription>
+			<ToolRun>
+				"true"
+			</ToolRun>
+			<Command>
+				<CommandName>
+				"Name etc."
+				</CommandName>
+				<CommandDescription>
+				"ut then the entity cannot have the EmbeddedFix set."
+				</CommandDescription>
+				<CommandCall>
+				"No Call"
+				</CommandCall>
+				<CommandValue>
+				"No Value"
+				</CommandValue>
+				<CommandType>
+				"2"
+				</CommandType>
+			</Command>
+		</Tool>
+		<Tool>
+			<ToolName>
+				"Tool 2."
+			</ToolName>
+			<ToolCall>
+				"tll.exe"
+			</ToolCall>
+			<ToolDescription>
+				"No Description"
+			</ToolDescription>
+			<ToolRun>
+				"true"
+			</ToolRun>
+			<Command>
+				<CommandName>
+				"Name 2."
+				</CommandName>
+				<CommandDescription>
+				"No Description"
+				</CommandDescription>
+				<CommandCall>
+				"No Call"
+				</CommandCall>
+				<CommandValue>
+				"No Value"
+				</CommandValue>
+				<CommandType>
+				"1"
+				</CommandType>
+			</Command>
+		</Tool>
+	</Group>
+	<Group>
+		<GroupName>
+			"wous"
+		</GroupName>
+		<GroupBaseDir>
+			"No Default Directory"
+		</GroupBaseDir>
+		<GroupMapName>
+			"No Map NameNo Map Name"
+		</GroupMapName>
+		<GroupDescription>
+			"No Desciprtion"
+		</GroupDescription>
+		<GroupGameName>
+			"No Game"
+		</GroupGameName>
+		<GroupGameDir>
+			"No Game Dir"
+		</GroupGameDir>
+		<GroupWadDrive>
+			"f:"
+		</GroupWadDrive>
+		<GroupGameRun>
+			"true"
+		</GroupGameRun>
+		<Command>
+			<CommandName>
+			"Name etc."
+			</CommandName>
+			<CommandDescription>
+			"No Description"
+			</CommandDescription>
+			<CommandCall>
+			"No Call"
+			</CommandCall>
+			<CommandValue>
+			"No Value"
+			</CommandValue>
+			<CommandType>
+			"0"
+			</CommandType>
+		</Command>
+		<Tool>
+			<ToolName>
+				"Tool etc."
+			</ToolName>
+			<ToolCall>
+				"tll.exe"
+			</ToolCall>
+			<ToolDescription>
+				"No Description"
+			</ToolDescription>
+			<ToolRun>
+				"true"
+			</ToolRun>
+			<Command>
+				<CommandName>
+				"Name etc."
+				</CommandName>
+				<CommandDescription>
+				"ut then the entity cannot have the EmbeddedFix set."
+				</CommandDescription>
+				<CommandCall>
+				"No Call"
+				</CommandCall>
+				<CommandValue>
+				"No Value"
+				</CommandValue>
+				<CommandType>
+				"2"
+				</CommandType>
+			</Command>
+		</Tool>
+		<Tool>
+			<ToolName>
+				"Tool 2."
+			</ToolName>
+			<ToolCall>
+				"tll.exe"
+			</ToolCall>
+			<ToolDescription>
+				"No Description"
+			</ToolDescription>
+			<ToolRun>
+				"true"
+			</ToolRun>
+			<Command>
+				<CommandName>
+				"Name 2."
+				</CommandName>
+				<CommandDescription>
+				"No Description"
+				</CommandDescription>
+				<CommandCall>
+				"No Call"
+				</CommandCall>
+				<CommandValue>
+				"No Value"
+				</CommandValue>
+				<CommandType>
+				"1"
+				</CommandType>
+			</Command>
+		</Tool>
+	</Group>
+</WorldBuilder>
